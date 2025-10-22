@@ -9,12 +9,58 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Suite</th></tr>
-<tr><td><a href="#t0">StandaloneTest</a></td><td class="num">3</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">19,329</td><td></td><td></td></tr>
+<tr><td><a href="#t0">ErrorValidationTest</a></td><td class="num">1</td><td class="num">0</td><td class="num attn">1</td><td class="num attn">1</td><td class="num">29,047</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t1">StandaloneTest</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">39,020</td><td></td><td></td></tr>
+<tr><th>Total</th><th class="num">3</th><th class="num">0</th><th class="num attn">1</th><th class="num attn">2</th><th class="num">68,067</th><th colspan="2"></th></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">StandaloneTest &#8212; passed</th></tr><tr class="passedeven"><td rowspan="3">SelFrameWork.StandaloneTest</td><td><a href="#m0">productConfirmation</a></td><td rowspan="1">1760338638207</td><td rowspan="1">1072</td></tr><tr class="passedeven"><td><a href="#m1">submitOrderTest</a></td><td rowspan="2">1760338623007</td><td rowspan="2">5254</td></tr><tr class="passedeven"><td><a href="#m2">submitOrderTest</a></td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">ErrorValidationTest &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">SelFrameWork.ErrorValidationTest</td><td><a href="#m0">incorrectEmailOrPassword</a></td><td rowspan="1">1760629724429</td><td rowspan="1">250</td></tr><tr><th colspan="4">ErrorValidationTest &#8212; retried</th></tr><tr class="retriedeven"><td rowspan="1">SelFrameWork.ErrorValidationTest</td><td><a href="#m1">incorrectEmailOrPassword</a></td><td rowspan="1">1760629715830</td><td rowspan="1">355</td></tr><tr><th colspan="4">ErrorValidationTest &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">SelFrameWork.ErrorValidationTest</td><td><a href="#m2">LoginErrorTest</a></td><td rowspan="1">1760629707067</td><td rowspan="1">432</td></tr></tbody>
+<tbody id="t1"><tr><th colspan="4">StandaloneTest &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">SelFrameWork.StandaloneTest</td><td><a href="#m3">productConfirmation</a></td><td rowspan="1">1760629734304</td><td rowspan="1">465</td></tr><tr><th colspan="4">StandaloneTest &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">SelFrameWork.StandaloneTest</td><td><a href="#m4">submitOrderTest</a></td><td rowspan="2">1760629706603</td><td rowspan="2">5270</td></tr><tr class="passedeven"><td><a href="#m5">submitOrderTest</a></td></tr></tbody>
 </table>
-<h2>StandaloneTest</h2><h3 id="m0">SelFrameWork.StandaloneTest#productConfirmation</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">SelFrameWork.StandaloneTest#submitOrderTest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr><tr class="param stripe"><td>surampudi@gmail.com</td><td>Hari9490@</td><td>ZARA COAT 3</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">SelFrameWork.StandaloneTest#submitOrderTest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr><tr class="param stripe"><td>pavani1008@gmail.com</td><td>Pavani1008@</td><td>ADIDAS ORIGINAL</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>ErrorValidationTest</h2><h3 id="m0">SelFrameWork.ErrorValidationTest#incorrectEmailOrPassword</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [Incorrect email o password.] but found [Incorrect email or password.]
+	at SelFrameWork.ErrorValidationTest.incorrectEmailOrPassword(ErrorValidationTest.java:27)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+... Removed 23 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">SelFrameWork.ErrorValidationTest#incorrectEmailOrPassword</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [Incorrect email o password.] but found [Incorrect email or password.]
+	at SelFrameWork.ErrorValidationTest.incorrectEmailOrPassword(ErrorValidationTest.java:27)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+... Removed 23 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">SelFrameWork.ErrorValidationTest#LoginErrorTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>StandaloneTest</h2><h3 id="m3">SelFrameWork.StandaloneTest#productConfirmation</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.ElementClickInterceptedException: Element &lt;button class=&quot;btn btn-custom&quot;&gt; is not clickable at point (1175,27) because another element &lt;div class=&quot;ngx-spinner-overlay ng-tns-c31-1 ng-trigger ng-trigger-fadeIn ng-star-inserted ng-animating&quot;&gt; obscures it
+Build info: version: &apos;4.35.0&apos;, revision: &apos;1c58e5028b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.12&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [a411ee6a-3478-4ea9-b405-26813725922f, clickElement {id=5a806000-2398-4cf5-ae78-7bcec3f3e8ad}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 144.0, moz:accessibilityChecks: false, moz:buildID: 20251009125714, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 10840, moz:profile: C:\Users\JESUS\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Element: [[FirefoxDriver: firefox on windows (a411ee6a-3478-4ea9-b405-26813725922f)] -&gt; xpath: //ul//li//button[@routerlink=&apos;/dashboard/myorders&apos;]]
+Session ID: a411ee6a-3478-4ea9-b405-26813725922f
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy13.click(Unknown Source)
+	at sel.abstractComponents.AbstractComponents.orderPageClick(AbstractComponents.java:54)
+	at SelFrameWork.StandaloneTest.productConfirmation(StandaloneTest.java:50)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+... Removed 26 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">SelFrameWork.StandaloneTest#submitOrderTest</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{password=Hari9490@, product=ZARA COAT 3, email=surampudi@gmail.com}</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">SelFrameWork.StandaloneTest#submitOrderTest</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{password=Pavani1008@, product=ADIDAS ORIGINAL, email=pavani1008@gmail.com}</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

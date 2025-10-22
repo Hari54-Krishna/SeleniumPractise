@@ -3,9 +3,13 @@ package sel.TestComponents;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
+import java.nio.charset.StandardCharsets;
 import java.time.Duration;
+import java.util.HashMap;
+import java.util.List;
 import java.util.Properties;
 
+import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
@@ -16,6 +20,8 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 
+import com.fasterxml.jackson.core.type.TypeReference;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import com.google.common.io.Files;
 
 import SelFrameWork.pageobjects.Loginpage;
@@ -46,6 +52,17 @@ public	Loginpage lp;
 		driver.get("https://rahulshettyacademy.com/client/dashboard/dash");
 		return driver;
 		}
+	
+		public List<HashMap<String, String>> readDataAndConvertToMap(String path) throws Exception {
+			
+			String jsoncontent = FileUtils.readFileToString(new File(path),StandardCharsets.UTF_8);
+			ObjectMapper mapper = new ObjectMapper();
+		List<HashMap<String,String>> data = mapper.readValue(jsoncontent, new TypeReference<List<HashMap<String, String>>>() {
+				
+			
+		});
+	return data;
+	}
 	public String screenShot(String testcaseName, WebDriver driver) throws IOException {
 		TakesScreenshot ts =(TakesScreenshot)driver;
 		File src = ts.getScreenshotAs(OutputType.FILE);
@@ -65,10 +82,6 @@ public	Loginpage lp;
 	public void tearDown() {
 		driver.quit();
 	}
-	
-	
-	
-		
 	}
 
 

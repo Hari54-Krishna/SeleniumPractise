@@ -15,4 +15,16 @@
       </class> <!-- SelFrameWork.ErrorValidationTest -->
     </classes>
   </test> <!-- ErrorValidationTest(failed) -->
+  <test thread-count="5" parallel="tests" name="StandaloneTest(failed)" verbose="0">
+    <classes>
+      <class name="SelFrameWork.StandaloneTest">
+        <methods>
+          <include name="productConfirmation"/>
+          <include name="launchOpenPage"/>
+          <include name="submitOrderTest"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- SelFrameWork.StandaloneTest -->
+    </classes>
+  </test> <!-- StandaloneTest(failed) -->
 </suite> <!-- Failed suite [Suite] -->
